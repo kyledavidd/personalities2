@@ -39,7 +39,7 @@ export default function Gallery() {
 
   return (
     <Container maxWidth="sm">
-      <Box component="section" sx={{ p: 2, border: '1px dashed grey', position: 'relative' }}>
+      <Box component="section" sx={{ p: 2, border: '1px solid grey', position: 'relative', borderRadius: '8px' }}>
         
         <Typography variant="h4" gutterBottom>
           NBA Legends
@@ -64,8 +64,8 @@ export default function Gallery() {
           </Button>
         </Stack>
 
-        <Box sx={{ position: 'relative' }}>
-          <img
+        <Box component="section" sx={{ p: 2, position: 'relative' }}>
+        <img
             src={sculpture.url}
             alt={sculpture.alt}
             style={{
